@@ -1,0 +1,31 @@
+<html>
+  <head>
+  <titel>Adarsh</titel>
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyT5pKtSmzfcvBfzjKqTDwuDlNFoCGVuqXY6r7BCmg/dev'
+    function fnsubmit() {
+        debugger;
+        const data = {
+            name: "Adarsh",
+            email: "Adarshtiwari1296@gmail.com",
+            comments: "All the Best Adarsh 🙌 you are doing Amezing!"
+        };
+
+        fetch(scriptURL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.text())
+            .then(result => alert("Success: " + result))
+            .catch(error => alert("Error: " + error.message));
+
+    }
+</script>
+  </head>
+  <body>
+     <button onclick="fnsubmit()" > submit</button>
+  </body>
+</html>
