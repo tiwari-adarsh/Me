@@ -1,26 +1,174 @@
-<html>
-  <head>
-    <title>Adarsh</title>
-    <script>
-      const scriptURL ='https://script.google.com/macros/s/AKfycby1KR6lzpox-qnR8Jw9-Eg7NUFt5CZXmMUL1lroabNdjMa_NqjOIkcTB4MChUb80oMl/exec';
+<!DOCTYPE html>
+<head>
+<title>Adarsh Tiwari</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js" ></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+<section class="section1"  style="padding-top: 20px;">   <!-- section1-->
+<div class="fontsize postiontop">Adarsh Tiwari</div>
+<div><img src="Image/IMG-20240326-WA0007.jpg"  height="250px" /></div>
+<div class="fontsize postionbottom">PORTFOLIO</div>
+<div class="postionbottom" style="bottom: 5pc;">Software Developer</div>
+</section>
 
-      function fnsubmit() {
-        const formData = new FormData();
-        formData.append('name', 'Adarsh');
-        formData.append('email', 'Adarshtiwari1296@gmail.com');
-        formData.append('comments', 'All the Best Adarsh 🙌 you are doing Amazing!');
+<section class="section2">  <!-- section2-->
+<div class="sectionwidth">
+  <div class="Hedingfont about">A LITTELE ABOUT ME</div>
+  <div class="normalfornt about" style="padding:2pc 0 0 8pc;" >Full Stack Developer with 2 years of experience in building secure and scalable financial applications using ASP.NET Core, MVC, Angularjs, SQL Server, and JavaScript. Skilled in API integration, performance optimisation, and implementing encryption standards. Committed to writing clean, maintainable code and delivering efficient solutions to complex problems.</div>
+</div>
+<div class="sectionwidth">
+    <div><img src="Image/IMG-20240326-WA0007.jpg" width="80%" height="300px" /></div>
+    <div><img src="Image/IMG-20240326-WA0007.jpg" width="30%" height="250px" style="float: right;padding-right: 100px;padding-top:20px;" /></div>
+</div>
+</section>
 
-        fetch(scriptURL, {
-          method: 'POST',
-          body: formData
-        })
-        .then(response => response.text())
-        .then(result => alert("Success: " + result))
-        .catch(error => alert("Error: " + error.message));
-      }
-    </script>
-  </head>
-  <body>
-    <button onclick="fnsubmit()">Submit</button>
-  </body>
-</html>
+<section class="section2">   <!-- section3-->
+    <div class="sectionwidth">
+      <div class="Hedingfont about">WORK EXPERIENCE</div>
+      <div class="normalfornt " style="padding: 30px;" >
+        <span class="bold" style="font-size: 30px;">Graficali Solution</span>
+        <div class="bold" style="font-family: monospace;">Software Developer</div>
+        <div class="bold" style="font-family: monospace;padding-left: 300px;" >July 2024- Present</div>
+        <ul class="fornt20" style="margin-top: 0px;">
+            <li>BUILT A SECURE, PCI-COMPLIANT SELFSERVICE PAYMENT KIOSK.</li>
+            <li>INTEGRATED BILINGUAL AND CASH-BASED PAYMENT WORKFLOWS TO IMPROVE ACCESSIBILITY.</li>
+            <li>IMPLEMENTED MULTI-CHANNEL RECEIPT DELIVERY (EMAIL, SMS, PRINT), INCREASING CUSTOMER SATISFACTION BY 40%.</li>
+            <li>ENSURED SECURE DATA STORAGE WITH MICROSOFT SQL SERVER AND ENCRYPTION LIBRARIES.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sectionwidth">
+        <div><img src="Image/IMG-20240326-WA0007.jpg" width="50%" height="200px" style="padding:2pc 0 0 10pc;" /></div>
+        <div style=" font-size:20px;padding: 35px;" >
+            <span class="bold" style="font-size: 30px;">Kalpataru Computer Service Pvt.Ltd</span>
+            <div class="bold" style="font-family: monospace;">Software Developer</div>
+            <div class="bold" style="font-family: monospace;padding-left: 20pc;" >July 2023 - June 2024</div>
+            <ul class="fornt20" style="margin-top: 0px;">
+                <li>BUILT CMFS MODULES FOR BROKER AND LOAN MANAGEMENT IN THE CAPITAL MARKET SECTOR USING .NET CORE 6 AND SQL SERVER.</li>
+                <li>ENHANCED FRONTEND RESPONSIVENESS USING JQUERY AND MVC PARTIAL VIEWS.</li>
+                <li>DESIGNED ONBOARDING WORKFLOWS AND REPORTING TOOLS; IMPROVED ADMIN EFFICIENCY BY 30%.</li>
+            </ul>
+          </div>    
+        </div>
+</section>
+
+<section class="section4">   <!-- section4-->
+<div class="sectionwidth">
+    <div class="Hedingfont about" style="text-align: center;">SKILLS & EXPERTISE</div>
+    <div style="display: flex;justify-content: space-evenly;">
+        <div><span class="bold" style="font-size: 30px;">Tools & Database</span>
+            <ul class="fornt20" style="margin-top: 0px;">
+                <li>SQL Server</li>
+                <li>MSSQL</li>
+                <li>Git Hub</li>
+                <li>Visual Studio</li>
+            </ul>
+        </div>
+        <div style="margin-top: 50px;"><span class="bold" style="font-size: 30px;">Front-End</span>
+            <ul class="fornt20" style="margin-top: 0px;">
+                <li>HTML5/li>
+                <li>CSS3</li>
+                <li>AngularJS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="sectionwidth" style="display: flex;">
+    <div>
+        <div><img src="Image/programing.png" height="300px"></div>
+        <div style="margin-top: 50px;"><span class="bold" style="font-size: 30px;">Specialities</span>
+            <ul class="fornt20" style="margin-top: 0px;">
+                <li>PCI-compliant encryption</li>
+                <li>API integration</li>
+                <li>Full-stack web apps</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div style="margin-top: 50px;"><span class="bold" style="font-size: 30px;">Programming</span>
+            <ul class="fornt20" style="margin-top: 0px;">
+                <li>ASP.NET Core</li>
+                <li>C#, MVC</li>
+                <li>Web API</li>
+                <li>ADO.NET, VB.NET</li>
+                <li>Entity Framework</li>
+            </ul>
+        </div>
+        <div><img src="Image/deskprograing.png" height="300px"></div>
+    </div>
+</div>
+</section>
+
+<section class="section5"> <!-- section5-->
+<div class="Hedingfont" style="text-align: center;">MY ART</div>
+<div style="display: flex;">
+    <div style="width: 30%;padding: 20px;">
+        <div><img src="Image/laundry.png" height="250px"></div>
+        <div>
+        <span class="bold" style="font-size: 30px;">Laundry Service</span>
+        <br><span>DEVELOPED A FULL-STACK ORDER BOOKING PLATFORM USING ASP.NET MVC, SQL SERVER,AND ANGULARJS, FEATURING DYNAMIC DASHBOARDS, REAL-TIME BOOKING UPDATES, AND RESPONSIVE FORMS FOR ADMINS AND CUSTOMERS.</span>
+        </div>
+    </div>
+    <div style="width: 30%;padding: 20px; padding-top: 100px;">
+        <div><img src="Image/desktop.png" height="250px"></div>
+        <div>
+        <span class="bold" style="font-size: 30px;">Portfolio Website</span>
+        <br><span>CREATED A SLEEK, RESPONSIVE PORTFOLIO WEBSITE TO SHOWCASE MY PERSONAL BRAND, SKILLS, AND PROFESSIONAL WORK.</span>
+        </div>
+    </div>
+    <div style="width: 30%;padding: 20px;position: relative;bottom: 50px;">
+        <div><img src="Image/inventry.jpg" height="250px"></div>
+        <div>
+        <span class="bold" style="font-size: 30px;">Inventory Management System</span>
+        <br><span>DEVELOPED A MODULAR ANGULAR APPLICATION TO MANAGE INVENTORY, CUSTOMER FEEDBACK, AND ORDER ASSIGNMENTS FOR DELIVERY STAFF. INTEGRATED WITH ASP.NET MVC BACKEND,FEATURING REAL-TIME STATUS UPDATES,ADMIN FILTERS, AND DYNAMIC UI COMPONENTS FOR ENHANCED OPERATIONAL CONTROL.</span>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="section6" style="display: flex;"> <!-- section6-->
+<div class="sectionwidth" style="display: grid;">
+    <div class="Hedingfont about">EDUCATION</div>
+    <div style="width: 80%;padding-left: 20px;">
+        <div class="bold" style="font-size:25px;font-family: monospace;">BSc Information & Technology</div>
+        <div class="fornt20" style="padding-left: 20px;">SIES College of Arts, Science & Commerce, SION(W)</div>
+        <div style="float:right;">09/2020 - 05/2023</div>
+    </div>
+    <div style="width: 80%;padding-left: 80px;" >
+        <div class="bold" style="font-size:25px;font-family: monospace;">Maharashtra State Board,HSC</div>
+        <div class="fornt20" style="padding-left: 50px;">Swami Vivekananda Junior College, Kurla (E)</div>
+        <div style="float:right;">06/2018 - 06/2020</div>
+    </div>
+</div>
+<div class="sectionwidth" style="padding-left:15pc;">
+    <div style="width: 80%;border: 10px solid goldenrod;">
+       <img src="Image/Adarsh_TiwariResume.png" width="100%" height="500px">
+    </div>
+</div>
+</section>
+
+<section class="section7" style="display: flex;">  <!-- section7-->
+<div class="sectionwidth" >
+    <div class="fornt20" style="font-family: monospace;">Adarsh Tiwari</div>
+    <div class="Hedingfont">LET’S COLLABORATE</div>
+    <div style="font-size:25px; font-family: monospace;">
+        <address>Chembure, Mumbai city, 400071</address>
+        <div>+91 730 487 5589</div>
+        <div>Adarshtiwari1296@gmail.com</div>
+    </div>
+</div>
+<div class="sectionwidth"  >
+    <form style="width: 80%; padding: 50px;">
+        <input id="Name" type="text"  placeholder="Your Lovly Name!" required>
+        <input id="EmailId" type="email" placeholder="Your Bussiness EmailId!" required>
+        <textarea id="Comment" type="text" placeholder="Sheare Your Thoghth 😉!" required></textarea>
+        <input type="submit" value="Hit Submit" onclick="fnSubmit()" style="width: 105%;background-color: black;color:#ffff;">
+    </form>
+</div>
+</section>
+</body>
