@@ -13,5 +13,5 @@ fnSubmit = () => {
     fetch(scriptURL,{method:"POST",body:formdata})
     .then(response => response.text())
     .then(result => alert("Thank You for Reaching Out "+ name + " ji !"))
-    .catch(alert("currently unable to send your message please try later."));
+    .catch(error => alert("currently unable to send your message please try later."));
 }
