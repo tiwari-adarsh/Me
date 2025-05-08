@@ -11,7 +11,11 @@ fnSubmit = () => {
     formdata.append("comments",comment);
 
     fetch(scriptURL,{method:"POST",body:formdata})
-        .then(async (response) => { if (response.ok) {alert("Thank You for Reaching Out "+ name + " ji !");}})
+        .then(async (response) => { if (response.ok) {alert("Thank You for Reaching Out "+ name + " ji !");
+                                                      const result = await response.text();
+                                                      console.log(result);
+                                                     }
+                                  })
         .catch(error => { alert("currently unable to send your message please try later.");
                          console.error("Detailed error:", error);});
 }
