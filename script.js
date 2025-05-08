@@ -11,10 +11,7 @@ fnSubmit = () => {
     formdata.append("comments",comment);
 
     fetch(scriptURL,{method:"POST",body:formdata})
+    .then(response => response.text())
     .then(result => alert("Thank You for Reaching Out "+ name + " ji !"))
-    .catch(alert("Currently unable to send you massege,Plese try letter."), erroremail(email,error.message));
-}
-
-erroremail = (email,msg) => {
-    MailApp.sendEmail("adarshtiwari1296@gmail.com","Profile- Error - "+ email, "ERROR -\n"+msg);
+    .catch(alert("currently unable to send your message please try later."));
 }
