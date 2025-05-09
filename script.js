@@ -6,7 +6,7 @@ fnSubmit = () => {
     var email = document.getElementById('EmailId').value;
     var comment = document.getElementById('Comment').value;
 
-    if(name != "" AND name != "" AND name != "" ){
+    if(name != "" && email != "" && comment != "" ){
     const formdata = new FormData();
     formdata.append("name",name);
     formdata.append("email",email);
