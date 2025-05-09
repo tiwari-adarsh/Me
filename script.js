@@ -11,18 +11,22 @@ fnSubmit = () => {
     formdata.append("email",email);
     formdata.append("comments",comment);
 
-    fetch(scriptURL,{method:"POST",body:formdata}).then(async (response) => {
-  if (!response.ok) {
-    throw new Error("HTTP status " + response.status);
-  }
-  const result = await response.text();
-  alert("Success: " + result);
-})
-.catch(error => {
-  alert("Error: " + error.message);
-  console.error("Detailed error:", error);
-});
-       
+    fetch(scriptURL, {
+      method: 'POST',
+      body: formdata
+    })
+    .then(response => {
+      if (!response.ok) throw new Error("Network response was not OK");
+      return response.text();  // If backend sends plain text
+    })
+    .then(result => {
+      console.log("Raw result:", result);
+      alert("Success: " + result);
+    })
+    .catch(error => {
+      console.error("Fetch failed:", error);
+      alert("Error: " + error.message);
+    });
 }
 
  //.then(async (response) => { if (response.ok) {alert("Thank You for Reaching Out "+ name + " ji !");
