@@ -15,13 +15,11 @@ fnSubmit = () => {
     fetch(scriptURL, {
       method: 'POST',
       body: formdata
-    }).then(result => {
-    console.log("Raw result:", result);
+    }).catch(result => {
     if (result.trim().toLowerCase().startsWith("success")) {
       alert("✅ Thank you! Your response has been received.");
     } else {
       console.warn("Server returned non-success response:", result);
-      // Optionally log but don't alert for server-side error unless needed
     }
   });
 }
