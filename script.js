@@ -23,10 +23,6 @@ fnSubmit = () => {
       console.warn("Server returned non-success response:", result);
       // Optionally log but don't alert for server-side error unless needed
     }
-  })
-  .catch(error => {
-    console.error("Fetch failed:", error);
-    alert("⚠️ Something went wrong. Please try again later.");
   });
 }
     
