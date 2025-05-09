@@ -15,8 +15,7 @@ fnSubmit = () => {
     fetch(scriptURL, {
       method: 'POST',
       body: formdata
-    }).catch(error => {alert("✅ Thank you! I have received your response. ;}
-  });
+    }).catch(error => {alert("✅ Thank you! I have received your response.")});
 }
     
 }
