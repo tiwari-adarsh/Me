@@ -6,6 +6,7 @@ fnSubmit = () => {
     var email = document.getElementById('EmailId').value;
     var comment = document.getElementById('Comment').value;
 
+    if(name != "" AND name != "" AND name != "" ){
     const formdata = new FormData();
     formdata.append("name",name);
     formdata.append("email",email);
@@ -14,25 +15,20 @@ fnSubmit = () => {
     fetch(scriptURL, {
       method: 'POST',
       body: formdata
-    })
-    .then(response => {
-      if (!response.ok) throw new Error("Network response was not OK");
-      return response.text();  // If backend sends plain text
-    })
-    .then(result => {
-      console.log("Raw result:", result);
-      alert("Success: " + result);
-    })
-    .catch(error => {
-      console.error("Fetch failed:", error);
-      alert("Error: " + error.message);
-    });
+    }).then(result => {
+    console.log("Raw result:", result);
+    if (result.trim().toLowerCase().startsWith("success")) {
+      alert("✅ Thank you! Your response has been received.");
+    } else {
+      console.warn("Server returned non-success response:", result);
+      // Optionally log but don't alert for server-side error unless needed
+    }
+  })
+  .catch(error => {
+    console.error("Fetch failed:", error);
+    alert("⚠️ Something went wrong. Please try again later.");
+  });
+}
+    
 }
 
- //.then(async (response) => { if (response.ok) {alert("Thank You for Reaching Out "+ name + " ji !");
-//                                                      const result = await response.text();
-//                                                     console.log(result);
-//                                                     }
-//                                  })
-//        .catch(error => { alert("currently unable to send your message please try later.");
-//                        console.error("Detailed error:", error);});
