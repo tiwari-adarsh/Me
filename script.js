@@ -13,10 +13,10 @@ fnSubmit = () => {
     formdata.append("comments",comment);
 
     fetch(scriptURL, {
-      method: 'POST',
-      body: formdata
-    }).catch(error => {alert("✅ Thank you! I have received your response.")});
-}
-    
+          method: 'POST',
+          body: formdata
+          }).then(() => {alert("✅ Thank you! I have received your response.");})
+          .catch(() => {alert("⚠️ Something went wrong. Please try again later.");});
+     }  
 }
 
