@@ -31,13 +31,51 @@ input,textarea{
     position: relative;
     bottom: 40%;
 }
-.section2,.section4{
-    display: flex;
-    
-}
+.section2,.section4{display: flex;}
 .Hedingfont{font-size: 5pc;}
 .bold{font-weight: bold;}
 .normalfornt{font-size: 25px;}
 .fornt20{font-size: 20px;}
-.about{width: 80%;}
+.about,.aboutmsg{width: 80%;}
+.aboutmsg{padding:2pc 0 0 8pc;}
 .sectionwidth{ width: 50%;}
+
+.experiencedate{
+    font-family: monospace;
+    padding-left: 55%;
+}
+.section7{display: grid;}
+
+.myart{display: flex;}
+.art1,.art2,.art3{width: 30%;padding: 20px;}
+.art2{padding-top:100px;}
+.art3{position: relative;bottom:50px;}
+
+@media (max-width:970px){
+   
+    .about2img{display: none;}
+
+    /* section3 */
+   .experiencedate{
+    padding-left: 30%;
+   }
+
+    /* section5 */
+    .myart{ display :grid;}
+    .art1,.art2,.art3{width: 90%;display:flex; gap: 10px;}
+    .art2{padding-top: 10px;
+        padding-bottom: 50px;
+        flex-direction: row-reverse;
+    }
+
+    .section7{display: grid;}
+
+}
+
+@media (max-width:870px){
+    .fontsize{font-size: 7pc;}
+    .section2,.section4{display: grid;}
+    .sectionwidth{width: 100%;}
+    .about{width: 100%;}
+    .programing2{gap: 100px;}
+}
