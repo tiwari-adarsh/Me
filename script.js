@@ -6,6 +6,9 @@ fnSubmit = () => {
     var email = document.getElementById('EmailId').value;
     var comment = document.getElementById('Comment').value;
 
+    if (!isValidEmail(email)) {     alert("❌ Please enter a valid email address.");
+     return;
+    }
     if(name != "" && email != "" && comment != "" ){
     const formdata = new FormData();
     formdata.append("name",name);
@@ -14,9 +17,16 @@ fnSubmit = () => {
 
     fetch(scriptURL, {
           method: 'POST',
-          body: formdata
-          }).then(() => {alert("✅ Thank you! I have received your response.");})
-          .catch(() => {alert("⚠️ Something went wrong. Please try again later.");});
+          body: formdata,
+          mode: 'no-cors'
+          }).then(() => {    alert("✅ Your message has been received!\n\nThanks for taking the time to connect. We’ll get back to you soon — hopefully at the right email 😊");  })
+            .catch(error => { console.error("Fetch error:", error);
+                              alert("⚠️ Something went wrong. Please try again later.");});
      }  
+}
+
+function isValidEmail(email) {
+  const strictEmailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailRegex.test(email);
 }
 
