@@ -44,7 +44,11 @@ input,textarea{
     font-family: monospace;
     padding-left: 55%;
 }
-.section7{display: grid;}
+#resume{
+    max-height: 500px;
+    min-height: 300px;
+}
+.section7{display: flex;}
 
 .myart{display: flex;}
 .art1,.art2,.art3{width: 30%;padding: 20px;}
@@ -74,7 +78,7 @@ input,textarea{
 
 @media (max-width:870px){
     .fontsize{font-size: 7pc;}
-    .section2,.section4{display: grid;}
+    .section2,.section4,.section6{display: grid;}
     .sectionwidth{width: 100%;}
     .about{width: 100%;}
     .programing2{gap: 100px;}
