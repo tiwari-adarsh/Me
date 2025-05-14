@@ -3,7 +3,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycby1KR6lzpox-qnR8Jw9-E
 
 fnSubmit = () => {
     document.querySelector("#submitBtn").disabled = true;
-    document.querySelector("#submitBtn").innerText = "Sending...";
+    document.querySelector("#submitBtn").value = "Sending...";
 
     var name = document.getElementById('Name').value;
     var email = document.getElementById('EmailId').value;
