@@ -23,10 +23,10 @@ fnSubmit = () => {
     formdata.append("comments",comment);
 
     sendFormData(formdata)
-    .then(() => {    alert("✅ Your message has been received!\n\nThanks for taking the time to connect. We’ll get back to you soon — hopefully at the right email 😊"); location.reload(); })
+    .then(() => { showSuccessModal(); })
     .catch(error => {    console.error("Form submission error:", error);   
                          alert("⚠️ Something went wrong. Please try again later.");  
-                         location.reload(); });      
+                         closeModal(); });      
     }  
 }
 
@@ -48,4 +48,14 @@ function isValidEmail(email) {
   const strictEmailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   return strictEmailRegex.test(email);
 }
+
+function showSuccessModal() {
+  document.getElementById('successModal').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('successModal').style.display = 'none';
+  location.reload();
+}
+
 
