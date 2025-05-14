@@ -2,9 +2,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycby1KR6lzpox-qnR8Jw9-E
 
 
 fnSubmit = () => {
-    document.querySelector("#submitBtn").disabled = true;
-    document.querySelector("#submitBtn").value = "Sending...";
-
     var name = document.getElementById('Name').value;
     var email = document.getElementById('EmailId').value;
     var comment = document.getElementById('Comment').value;
@@ -16,6 +13,9 @@ fnSubmit = () => {
              alert("❌ Please enter a valid email address.");
               return;
          }
+
+    document.querySelector("#submitBtn").disabled = true;
+    document.querySelector("#submitBtn").value = "Sending...";
         
     const formdata = new FormData();
     formdata.append("name",name);
@@ -23,10 +23,10 @@ fnSubmit = () => {
     formdata.append("comments",comment);
 
     sendFormData(formdata)
-    .then(() => {    alert("✅ Your message has been received!\n\nThanks for taking the time to connect. We’ll get back to you soon — hopefully at the right email 😊");  })
+    .then(() => {    alert("✅ Your message has been received!\n\nThanks for taking the time to connect. We’ll get back to you soon — hopefully at the right email 😊"); location.reload(); })
     .catch(error => {    console.error("Form submission error:", error);   
                          alert("⚠️ Something went wrong. Please try again later.");  
-                    });      
+                         location.reload(); });      
     }  
 }
 
