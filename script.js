@@ -22,7 +22,7 @@ fnSubmit = () => {
     formdata.append("email",email);
     formdata.append("comments",comment);
 
-    sendFormData(formData)
+    sendFormData(formdata)
     .then(() => {    alert("✅ Your message has been received!\n\nThanks for taking the time to connect. We’ll get back to you soon — hopefully at the right email 😊");  })
     .catch(error => {    console.error("Form submission error:", error);   
                          alert("⚠️ Something went wrong. Please try again later.");  
@@ -31,11 +31,11 @@ fnSubmit = () => {
 }
 
 
-sendFormData = (formData) =>{
+sendFormData = (formdata) =>{
     return new Promise((resolve, reject) => {
    fetch('https://script.google.com/macros/s/AKfycby1KR6lzpox-qnR8Jw9-Eg7NUFt5CZXmMUL1lroabNdjMa_NqjOIkcTB4MChUb80oMl/exec', {
       method: 'POST',
-      body: formData,
+      body: formdata,
       mode: 'no-cors'
     })
     .then(() => resolve())
