@@ -26,6 +26,7 @@ input,textarea{
 .postiontop{
     position: relative;
     top: 30%;
+    width:55pc;
 }
 .postionbottom{
     position: relative;
@@ -37,7 +38,7 @@ input,textarea{
 .normalfornt{font-size: 25px;}
 .fornt20{font-size: 20px;}
 .about,.aboutmsg{width: 80%;}
-.aboutmsg{padding:12% 0 0 20%;}
+.aboutmsg{padding:20% 0 0 20%;}
 .sectionwidth{ width: 50%;}
 
 .experiencedate{
