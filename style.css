@@ -24,9 +24,10 @@ input,textarea{
 }
 .fontsize{font-size: 9pc;}
 .postiontop{
+    width: 50pc;
     position: relative;
     top: 30%;
-    width:55pc;
+   
 }
 .postionbottom{
     position: relative;
