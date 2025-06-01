@@ -10,7 +10,7 @@
 <body>
 <section class="section1"  style="padding-top: 20px;">   <!-- section1-->
 <div class="fontsize postiontop">Adarsh Tiwari</div>
-<div><img src="mainphoto.png"  height="250px" style="border-radius: 5%;" /></div>
+<div><img src="Image/mainphoto.png"  height="250px" style="border-radius: 5%;" /></div>
 <div class="fontsize postionbottom">PORTFOLIO</div>
 <div class="postionbottom SDtext" >Software Developer</div>
 </section>
@@ -20,13 +20,13 @@
     <div class="Hedingfont aboutheding" >A LITTELE ABOUT ME</div>
     <div class="normalfornt aboutmsg">Full Stack Developer with 2 years of experience in building secure and scalable financial applications using ASP.NET Core, MVC, Angularjs, SQL Server, and JavaScript.Skilled in API integration, performance optimisation, and implementing encryption standards.Committed to writing clean, maintainable code and delivering efficient solutions to complex problems. </div>
   </div>
-  <div class="sectionwidth" ><img src="workingimag.png" class="WorkImg"  /></div>
+  <div class="sectionwidth" ><img src="Image/workingimag.png" class="WorkImg"  /></div>
 </section>
 
 <section class="section2" >   <!-- section3-->
     <div class="sectionwidth40">
       <div class="Hedingfont ExpHeding">WORK EXPERIENCE</div>
-      <div class="divworkingimag" ><img src="workingimg.png" class="WorkImg" /></div>
+      <div class="divworkingimag" ><img src="Image/workingimg.png" class="WorkImg" /></div>
       
     </div>
     <div class="sectionwidth60">
@@ -80,7 +80,7 @@
 </div>
 <div class="sectionwidth programing2">
     <div>
-        <div><img src="programing.png" height="300px"></div>
+        <div><img src="Image/programing.png" height="300px"></div>
         <div class="divSpecialities" ><span class="bold" style="font-size: 30px;">Specialities</span>
             <ul class="fornt20" style="margin-top: 0px;">
                 <li>PCI-compliant encryption</li>
@@ -99,7 +99,7 @@
                 <li>Entity Framework</li>
             </ul>
         </div>
-        <div><img src="deskprograing.png" height="300px" width="260px"></div>
+        <div><img src="Image/deskprograing.png" height="300px" width="260px"></div>
     </div>
 </div>
 </section>
@@ -108,7 +108,7 @@
 <div class="Hedingfont" style="text-align: center;">MY ART</div>
 <div class="myart">
     <div class="art1">
-        <div><img src="laundry.png" height="250px" class="imageborder"></div>
+        <div><img src="Image/laundry.png" height="250px" class="imageborder"></div>
         <div>
         <span class="bold artheadline">Laundry Service</span>
         <br><div style="font-size: 15px;">Developed a full-stack order booking platform using ASP.NET MVC, SQL Server, featuring dynamic dashboards, real-time booking updates, and responsive forms for admins and customers.
@@ -119,7 +119,7 @@
         </div>
     </div>
     <div class="art2" >
-        <div><img src="desktop.png" height="250px" class="imageborder"></div>
+        <div><img src="Image/desktop.png" height="250px" class="imageborder"></div>
         <div>
         <span class="bold artheadline">SAGA Airlines Ticket Booking</span>
         <br><div style="font-size: 15px;">The airline ticket booking system lets users search and book flights, add passenger details, and choose seats.
@@ -131,7 +131,7 @@
         </div>
     </div>
     <div class="art3">
-        <div><img src="whatsapp-for-business.svg" height="200px" class="imageborder"></div>
+        <div><img src="Image/whatsapp-for-business.svg" height="200px" class="imageborder"></div>
         <div>
         <span class="bold artheadline">Social Media Application</span>
         <br><div style="font-size: 15px;">Social Media Web Application provides most of the features available on the mobile app. 
@@ -159,9 +159,9 @@
 </div>
 <div class="divresume" >
     <div style="border: 10px solid goldenrod;">
-        <img id="resume" src="Adarsh_TiwariResume.png" width="100%" >
+        <img id="resume" src="Image/Adarsh_TiwariResume.png" width="100%" >
     </div>
-    <a download="Adarsh_TiwariResume.png" href="Adarsh_TiwariResume.png">Download</a>
+    <a download="Image/Adarsh_TiwariResume.png" href="Image/Adarsh_TiwariResume.png">Download</a>
 </div>
 </section>
 
@@ -169,7 +169,7 @@
 <div class="sectionwidth contactintro"  >
     <div class="fornt20" style="font-family: monospace;">Adarsh Tiwari</div>
     <div class="Hedingfont">LET’S COLLABORATE</div>
-    <div style="font-size:20px; font-family: monospace;">
+    <div style="font-size:23px; font-family: monospace;">
         <address>Chembure, Mumbai city, 400071</address>
         <div>+91 730 487 5589</div>
         <div>Adarshtiwari1296@gmail.com</div>
@@ -180,8 +180,18 @@
         <input id="Name" type="text"  placeholder="Your Lovly Name!" required>
         <input id="EmailId" type="email" placeholder="Your Bussiness EmailId!" required>
         <textarea id="Comment" type="text" placeholder="Sheare Your Thoghth 😉!" required></textarea>
-        <input type="submit" value="Hit Submit" onclick="fnSubmit()" style="width: 105%;background-color: black;color:#ffff;">
+        <input type="submit" id="submitBtn" value="Hit Submit" onclick="fnSubmit()" style="width: 105%;background-color: black;color:#ffff;">
     </form>
 </div>
 </section>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <h2>✅ Message Received!</h2>
+      <p>Thanks for taking the time to connect. We'll get back to you soon — hopefully at the right email 😊</p>
+      <button onclick="closeModal()">OK</button>
+    </div>
+  </div>
+
 </body>
