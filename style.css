@@ -31,45 +31,93 @@ input,textarea{
     position: relative;
     bottom: 40%;
 }
-.section4{display: flex;}
-.Hedingfont{font-size: 5pc;}
+.SDtext{bottom: 5pc;}
+.section2,.section4{display: flex;}
+.Hedingfont{font-size: 3pc;}
 .bold{font-weight: bold;}
 .normalfornt{font-size: 25px;}
 .fornt20{font-size: 20px;}
+.aboutheding{
+    text-align: center;
+    width: 70%;
+    padding-left: 15%;
+}
+.ExpHeding{padding-left: 5%;text-align: center;}
 .about,.aboutmsg{width: 80%;}
-.aboutmsg{padding:20% 0 0 20%;}
+.aboutmsg{padding:5% 0 0 10%;}
 .sectionwidth{ width: 50%;}
-
-.experiencedate{
+.sectionwidth40{width: 40%;}
+.sectionwidth60{width: 60%;}
+.experiencedate,.experiencedate2{
     font-family: monospace;
     padding-left: 55%;
+}
+.WorkImg{
+    border-radius: 5%;
+    height: 500px;
+    width: 70%;
 }
 #resume{
     max-height: 500px;
     min-height: 300px;
 }
-.section7{display: flex;}
+.section7,.section6{display: flex;}
 
     /* section5 */
     .myart{ display :grid;}
-    .art1,.art2,.art3{width: 90%;display:flex; gap: 10px;}
+    .art1,.art2,.art3{
+        width: 90%;
+        display:flex;
+        gap: 10px;
+        padding:10px;
+    }
     .art2{padding-top: 10px;
         padding-bottom: 50px;
         flex-direction: row-reverse;
     }
 .art3{position: relative;bottom:50px;}
-
+.contactintro{
+    display: grid;
+    align-content: space-evenly;
+}
+.programing2{display: flex;}
+.divworkingimag{padding: 5% 0 0 10%;}
+.divSpecialities,.divPrograming{margin-top: 50px;}
+.artheadline{font-size: 30px;}
+.imageborder{border-radius: 5%;}
+.divresume{width: 40%;margin-top: 30px;}
+form{width: 80%;}
 @media (max-width:970px){
    .about2img{display: none;}
-   .experiencedate{
-    padding-left: 30%;
-   }
     .section7{display: grid;}
 }
 
 @media (max-width:870px){
+    section{padding: 25px 25px;}
+    .fontsize{font-size: 50px;}
+    .SDtext{bottom: 2pc;}
     .section2,.section4,.section6{display: grid;}
-    .sectionwidth{width: 100%;}
+    .sectionwidth,.sectionwidth40,.sectionwidth60{width: 100%;}
     .about{width: 100%;}
-    .programing2{gap: 100px;}
+    .aboutheding{width: 100%;padding-left: 0%;}
+    .WorkImg{width: 100%;}
+    .normalfornt{font-size: 20px;}
+    .aboutmsg{width: 100%;padding: 5% 0%;}
+    .ExpHeding{padding-left: 0%;}
+    .experiencedate{padding-left: 30%;}
+    .experiencedate2{padding-left: 20%;}
+    .programing2{display:grid;}
+    .divworkingimag{padding: 0%;}
+.divSpecialities,.divPrograming{margin-top: 0;}
+   .divPrograming{margin-left: 100px;}
+    .art1,.art2,.art3{
+        display: grid;
+        padding: 0px;
+        gap: 0px;
+        position: static;
+    }
+    .myart{gap:30px;}
+    .imageborder{width: 100%;}
+    .divresume{width: 100%;}
+    form{width: 90%;padding: 20px 0px;}
 }
